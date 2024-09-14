@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Guía Básica de CSS</h1>
+
+    <div class="section">
+        <h2>1. Definición de CSS</h2>
+        <p>CSS (Cascading Style Sheets) es un lenguaje utilizado para describir la presentación de un documento HTML. CSS controla cómo los elementos HTML deben ser renderizados en la pantalla, en papel, o en otros medios.</p>
+    </div>  
+
+    <div class="section">
+        <h2>2. Funcionamiento Básico de CSS</h2>
+        <p>CSS se basa en reglas que definen el estilo de los elementos HTML. Estas reglas consisten en un selector y un bloque de declaración. El selector apunta al elemento HTML que deseas estilizar y el bloque de declaración contiene una o más declaraciones separadas por punto y coma. Cada declaración incluye una propiedad y un valor.</p>
+    </div>
+
+    <div class="section">
+        <h2>3. Incluir CSS en un archivo HTML</h2>
+        <p>CSS se puede incluir en un archivo HTML de tres maneras:</p>
+        <ul>
+            <li><strong>CSS en línea:</strong> Se utiliza el atributo <code>style</code> dentro de un elemento HTML. Ejemplo: <code>&lt;p style="color: blue;"&gt;Texto azul&lt;/p&gt;</code></li>
+            <li><strong>CSS interno:</strong> Se utiliza la etiqueta <code>&lt;style&gt;</code> dentro de la sección <code>&lt;head&gt;</code> del documento HTML.</li>
+            <li><strong>CSS externo:</strong> Se enlaza un archivo CSS externo usando la etiqueta <code>&lt;link&gt;</code> dentro de la sección <code>&lt;head&gt;</code>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Definición de una regla CSS</h2>
+        <p>Una regla CSS consiste en un selector y un bloque de declaración. Aquí tienes un ejemplo básico:</p>
+        <pre><code>
+/* Ejemplo de una regla CSS */
+p {
+    color: red;
+    font-size: 16px;
+}
+        </code></pre>
+    </div>
+
+    <div class="section">
+        <h2>5. Elementos de una regla CSS</h2>
+        <ul>
+            <li><strong>Regla:</strong> Es la combinación de un selector y un bloque de declaración.</li>
+            <li><strong>Selector:</strong> Apunta al elemento HTML que deseas estilizar. Ejemplo: <code>p</code> en la regla anterior selecciona todos los elementos <code>&lt;p&gt;</code>.</li>
+            <li><strong>Bloque de declaración:</strong> Contiene una o más declaraciones CSS. Está delimitado por llaves <code>{ }</code>.</li>
+            <li><strong>Propiedad:</strong> Especifica qué aspecto del elemento HTML deseas cambiar. Ejemplo: <code>color</code>, <code>font-size</code>.</li>
+            <li><strong>Valor:</strong> Define el valor de la propiedad. Ejemplo: <code>red</code>, <code>16px</code>.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Medios CSS</h2>
+        <p>Los medios CSS se refieren a la capacidad de aplicar diferentes estilos según el dispositivo o las características de la pantalla. Esto se logra utilizando las consultas de medios (<code>@media</code>). Ejemplo:</p>
+        <pre><code>
+/* Aplica estilos solo en pantallas con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+        </code></pre>
+    </div>
+
+    <div class="section">
+        <h2>7. Comentarios CSS</h2>
+        <p>Los comentarios en CSS se utilizan para dejar notas en el código y no afectan el estilo de los elementos. Se encierran entre <code>/*</code> y <code>*/</code>. Ejemplo:</p>
+        <pre><code>
+/* Este es un comentario en CSS */
+body {
+    background-color: white; /* El color de fondo es blanco */
+}
+        </code></pre>
+    </div>
+
+    <div class="section">
+        <h2>8. Sintaxis de la definición de las propiedades CSS</h2>
+        <p>La sintaxis básica de una propiedad CSS es:</p>
+        <pre><code>selector {
+    propiedad: valor;
+}</code></pre>
+        <p>Ejemplo:</p>
+        <pre><code>p {
+    color: green;
+}</code></pre>
+    </div>
+
+
+</body>
+</html>
